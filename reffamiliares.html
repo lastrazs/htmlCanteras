@@ -4,37 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/theme-1.css" class="theme-1">
+    <link rel="stylesheet" href="css/theme-2.css" class="theme-2">
+    <link rel="stylesheet" href="css/theme-3.css" class="theme-3">
+    <script src="style.js"></script>
     <title>Document</title>
 </head>
 <body>
         <div class="contenedor">
             <div class="fondo">
-            <div class="contenido">
+              <div class="contenido">
                 <div class="text">
-                    <ul>
-                        <h2>Referencias familiares</h2>
-                        <li>
-                            Dairo Lastra Escobar,
-                            Phone:+57 3104337758<br>
-                            Parentesco: Padre
-                        </li>
-                        <li>
-                            Erika Bernal Quintero,
-                            Phone:+57 3127345965<br>
-                            Parentesco: Madre
-                        </li>
-                    </li>
-                    </ul>
+                  <h2>Referencias Familiares</h2>
+                    <div class="accordion">
+                      <button class="accordion-btn">Dairo Lastra Escobar</button>
+                        <div class="panel">
+                          <p>   Phone:+57 3104337758
+                              Parentesco: Padre</p>
+                        </div>
+                      <button class="accordion-btn">Erika Bernal Quintero</button>
+                        <div class="panel">
+                          <p>Phone:+57 3127345965
+                             Parentesco: Madre</p>
+                        </div>                   
+                    </div>
+                  </div>
+              
+                        <div class="botones">
+                            <a href="experiencia.html" class="boton boton-1">EXPERIENCIA</a>
+                            <a href="refpersonales.html" class="boton boton-2">REFERENCIAS PERSONAlES</a>
+                            <a href="CC.html" class="boton boton-3">INICIO</a>
+                            <a href="estudios.html" class="boton boton-4">ESTUDIOS REALIZADOS</a>
+                        </div>
                 </div>
-                <div class="botones">
-                    <a href="experiencia.html" class="boton boton-1">EXPERIENCIA</a>
-                    <a href="refpersonales.html" class="boton boton-2">REFERENCIAS PERSONAlES</a>
-                    <a href="reffamiliares.html" class="boton boton-3">REFERENCIAS FAMILIARES</a>
-                    <a href="estudios.html" class="boton boton-4">ESTUDIOS REALIZADOS</a>
+                
+                <button id="themeButton" class="themeButton">Cambiar Tema</button>
+                <div id="themeOptions" style="display: none;">
+                    <button id="theme-1" class="themeButton">Tema 1</button>
+                    <button id="theme-2" class="themeButton">Tema 2</button>
+                    <button id="theme-3" class="themeButton">Tema 3</button>
+                </div>
         </div>
-            </div>
-        </div>   
-    </div>     
+        <script>
+          initAccordion();
+        setUpThemes();
+        
+    
+        </script>
+        </div>     
 </body>
-</html>

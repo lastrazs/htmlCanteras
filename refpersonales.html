@@ -4,38 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/theme-1.css" class="theme-1">
+    <link rel="stylesheet" href="css/theme-2.css" class="theme-2">
+    <link rel="stylesheet" href="css/theme-3.css" class="theme-3">
+    <script src="style.js"></script>
     <title>Document</title>
 </head>
 <body>
-        <div class="contenedor">
-            <div class="fondo">
+    <div class="contenedor">
+        <div class="fondo">
             <div class="contenido">
                 <div class="text">
-                
-                  <ul>
-                    <h2>Referencias personales</h2>
-                    <li>
-                        David Puello Gutierrez
-                        Phone: +57 3216051739
-                    </li>
-                    <li>
-                        Sara Rivera
-                        Phone: +57 3233616348
-                    </li>
-                    <li>
-                        Emmanuel Guisao
-                        Phone: +57 3113806750
-                    </li>
-                  </ul>
+                    <h2>Referencias Personales</h2>
+                    <div class="accordion">
+                        <button class="accordion-btn">David Puello Gutierrez</button>
+                        <div class="panel">
+                            <p>Phone: +57 3216051739</p>
+                        </div>
+                        <button class="accordion-btn">Sara Rivera</button>
+                        <div class="panel">
+                            <p> Phone: +57 3233616348</p>
+                        </div>
+                        <button class="accordion-btn">Emmanuel Guisao</button>
+                        <div class="panel">
+                            <p>Phone: +57 3113806750</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="botones">
-                    <a href="experiencia.html" class="boton boton-1">EXPERIENCIA</a>
-                    <a href="refpersonales.html" class="boton boton-2">REFERENCIAS PERSONAlES</a>
-                    <a href="reffamiliares.html" class="boton boton-3">REFERENCIAS FAMILIARES</a>
-                    <a href="estudios.html" class="boton boton-4">ESTUDIOS REALIZADOS</a>
+                    <div class="botones">
+                        <a href="experiencia.html" class="boton boton-1">EXPERIENCIA</a>
+                        <a href="CC.html" class="boton boton-2">INICIO</a>
+                        <a href="reffamiliares.html" class="boton boton-3">REFERENCIAS FAMILIARES</a>
+                        <a href="estudios.html" class="boton boton-4">ESTUDIOS REALIZADOS</a>
+                    </div>
+            
         </div>
+            <button  id="themeButton" class="themeButton">Cambiar Tema</button>
+            <div id="themeOptions" style="display: none;">
+                <button id="theme-1" class="themeButton">Tema 1</button>
+                <button id="theme-2" class="themeButton">Tema 2</button>
+                <button id="theme-3" class="themeButton">Tema 3</button>
             </div>
+        </div>
+    </div>
+    <script>
+    setUpThemes();
+    initAccordion();
+    </script>
         </div>
     </div>        
 </body>

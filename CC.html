@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/theme-1.css" class="theme-1">
+    <link rel="stylesheet" href="css/theme-2.css" class="theme-2">
+    <link rel="stylesheet" href="css/theme-3.css" class="theme-3">
+    <script src="style.js"></script>
+    
 </head>
 <body>
     <div class="contenedor">
@@ -26,17 +30,29 @@
             <a href="experiencia.html" class="boton boton-1">EXPERIENCIA</a>
     
     <!-- Botón 2 -->
-            <a href="refpersonales.html" class="boton boton-2">REFERENCIAS PERSONAlES</a>
+            <a href="refpersonales.html" class="boton boton-1">REFERENCIAS PERSONAlES</a>
     
     <!-- Botón 3 -->
-            <a href="reffamiliares.html" class="boton boton-3">REFERENCIAS FAMILIARES</a>
+            <a href="reffamiliares.html" class="boton boton-1">REFERENCIAS FAMILIARES</a>
     
     <!-- Botón 4 -->
-            <a href="estudios.html" class="boton boton-4">ESTUDIOS REALIZADOS</a>
+            <a href="estudios.html" class="boton boton-1">ESTUDIOS REALIZADOS</a>
         </div>
             <a class="download" style="color: black;" href="myresume.pdf" download>Download my resume in PDF format</a>
     </div>
+
+<button id="themeButton" class="themeButton">Cambiar Tema</button>
+<div id="themeOptions" style="display: none;">
+    <button id="theme-1" class="themeButton">Tema 1</button>
+    <button id="theme-2" class="themeButton">Tema 2</button>
+  <button id="theme-3" class="themeButton">Tema 3</button>
+</div>
     </div>
     </div>
+    <script>
+        setUpThemes();
+        initAccordion();
+       
+    </script>
 </body>
 </html>

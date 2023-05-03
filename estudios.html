@@ -4,44 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/theme-1.css" class="theme-1">
+    <link rel="stylesheet" href="css/theme-2.css" class="theme-2">
+    <link rel="stylesheet" href="css/theme-3.css" class="theme-3">
+    <script src="style.js"></script>
     <title>Document</title>
 </head>
         <div class="contenedor">
             <div class="fondo">
-            <div class="contenido">
-                <div class="text">
-                    <ul><h2>Estudios realizados</h2>
-                        <li>
-                                Tecnica en desarrollo de software,
-                                SENA,
-                                2021, Finalizada.
+                <div class="contenido">
+                    <div class="text">
+                        <h2>Estudios realizados</h2>
+                            <div class="accordion">
+                                <button class="accordion-btn">Tecnica en desarrollo de software</button>
+                               <div class="panel">
+                                <p>SENA, 2021, Finalizada.</p>
+                               </div>
+                                <button class="accordion-btn">Tecnologia en desarollo de software</button>
+                                <div class="panel">
+                                    <p>ITM,2022, En formacion.</p>
+                                </div>
+                                
                             
-                        <li>
-                        
-                            Tecnologia en desarollo de software,
-                            ITM,
-                            2022, En formacion.
                             
-                        </li>
-                        <li>
-                            
-                            Tecnica en soporte a sistemas informaticos,
-                            CESDE,
-                            2022, En formacion.
-                            
-                        </li>    
-                    </ul>
-                </div>
+                                <button class="accordion-btn">Tecnica en soporte a sistemas informaticos</button>
+                                <div class="panel">
+                                    <p>CESDE, 2022, En formacion.</p>
+                                </div>
+                            </div>   
+                    </div>
                 <div class="botones">
                     <a href="experiencia.html" class="boton boton-1">EXPERIENCIA</a>
                     <a href="refpersonales.html" class="boton boton-2">REFERENCIAS PERSONAlES</a>
                     <a href="reffamiliares.html" class="boton boton-3">REFERENCIAS FAMILIARES</a>
-                    <a href="estudios.html" class="boton boton-4">ESTUDIOS REALIZADOS</a>
-        </div>
+                    <a href="CC.html" class="boton boton-4">INICIO</a>
+                </div>
+            </div>
+                <button id="themeButton" class="themeButton">Cambiar Tema</button>
+                    <div id="themeOptions" style="display: none;">
+                        <button id="theme-1" class="themeButton">Tema 1</button>
+                        <button id="theme-2" class="themeButton">Tema 2</button>
+                        <button id="theme-3" class="themeButton">Tema 3</button>
+                    </div>
             </div>
         </div>
-    </div>
-</ul>
+        <script>
+        setUpThemes();
+        initAccordion();
+        </script>
 </body>
 </html>
